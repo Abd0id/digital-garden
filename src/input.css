@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .bg-neutral-primary {
+    background-color: var(--color-neutral-primary);
+  }
+}

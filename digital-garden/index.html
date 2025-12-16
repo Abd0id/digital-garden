@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital garden</title>
+    <link href="../src/output.css" rel="stylesheet" />
+    <script src="../public/index.js" defer></script>
+  </head>
+  <body
+    class="bg-green-300 antialiased bg-linear-to-b from-0% dark:from-brand/8 from-neutral-secondary to-[48rem] to-primary"
+  >
+    <header>
+      <nav
+        class="bg-green-400 fixed w-full z-20 top-0 start-0 border-b border-default"
+      >
+        <div
+          class="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="../public/Digital-garden-icon.png"
+              class="h-20"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center text-xl text-heading font-semibold whitespace-nowrap"
+              >Digital Garden</span
+            >
+          </a>
+          <div
+            class="inline-flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="text-white bg-green-800 hover:bg-green-900 transition-colors ease-in-out duration-300 box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 text-sm px-3 py-2 focus:outline-none"
+            >
+              log in
+            </button>
+            <button
+              data-collapse-toggle="navbar-cta"
+              type="button"
+              class="inline-flex items-center p-2 w-9 h-9 justify-center text-sm text-body md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+              aria-controls="navbar-cta"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="2"
+                  d="M5 7h14M5 12h14M5 17h14"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-cta"
+          >
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="flex justify-center items-center h-screen">
+      <div
+        class="w-full max-w-sm bg-neutral-primary-soft p-6 border border-default shadow-xs"
+      >
+        <form action="#">
+          <h5 class="text-xl font-semibold text-heading mb-6">
+            Sign in
+          </h5>
+          <div class="mb-4">
+            <label
+              for="email"
+              class="block mb-2.5 text-sm font-medium text-heading"
+              >Your email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="bg-green-200 border border-default-medium text-heading text-sm focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+              placeholder="example@company.com"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="password"
+              class="block mb-2.5 text-sm font-medium text-heading"
+              >Your password</label
+            >
+            <input
+              type="password"
+              id="password"
+              class="bg-green-200 border border-default-medium text-heading text-sm focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+              placeholder="•••••••••"
+              required
+            />
+          </div>
+          <br />
+          <button
+            type="submit"
+            class="text-white bg-green-800 box-border border border-transparent hover:bg-green-900 ease-in-out transition-colors duration-300 shadow-xs font-medium leading-5 text-sm px-4 py-2.5 focus:outline-none w-full mb-3"
+          >
+            Login to your account
+          </button>
+          <div class="text-sm font-medium text-body">
+            Not registered?
+            <a href="#" class="text-fg-brand hover:underline">Create account</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-green-400 shadow-xs border border-default m-4">
+      <div class="w-full max-w-7xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href=""
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="../public/Digital-garden-icon.png"
+              class="h-25"
+              alt="Digital garden Logo"
+            />
+            <span
+              class="text-heading self-center text-2xl font-semibold whitespace-nowrap"
+              >Digital garden</span
+            >
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-body sm:mb-0"
+          >
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">About</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="my-6 border-default sm:mx-auto lg:my-8" />
+        <span class="block text-sm text-body sm:text-center"
+          >© 2023
+          <a href="" class="hover:underline">Digital garden™</a>.
+          All Rights Reserved.</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
