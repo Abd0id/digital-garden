@@ -6,7 +6,7 @@
           class="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
           <a
-            href="https://flowbite.com/"
+            href="../digital-garden/index.php"
             class="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
@@ -63,7 +63,7 @@
             >
               <li>
                 <a
-                  href="#"
+                  href="../digital-garden/index.php"
                   class="block py-2 px-3 bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
                   aria-current="page"
                   >Home</a
