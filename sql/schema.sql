@@ -1,9 +1,12 @@
+CREATE DATABASE digital_garden;
+USE digital_garden;
+
 CREATE TABLE users (
     id int AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) UNIQUE NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
     inscription_date DATETIME DEFAULT CURRENT_TIMESTAMP,
-    password_hash VARCHAR(255) NOT NULL,
+    password_hash VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE themes (
